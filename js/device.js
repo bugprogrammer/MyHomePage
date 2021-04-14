@@ -19,5 +19,5 @@ function isHide() {
         document.getElementById("git").style.visibility = "hidden";
     } else {
         document.getElementById("git").style.visibility = "visible";
-    } 
+    }
 }
