@@ -10,35 +10,15 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/wavify.js"></script>
+	<script type="text/javascript" src="js/jquery.wavify.js"></script>
+	<script type="text/javascript" src="js/device.js"></script>
 	<title>Bugprogrammer's start</title>
 </head>
 
 <body>
-	<script type="text/javascript">
-		function isHide() {
-			var os = function () {
-				var ua = navigator.userAgent,
-					isAndroid = /(?:Android)/.test(ua),
-					isFireFox = /(?:Firefox)/.test(ua),
-					isChrome = /(?:Chrome|CriOS)/.test(ua),
-					isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),
-					isPhone = /(?:iPhone)/.test(ua) && !isTablet,
-					isPC = !isPhone && !isAndroid
-				return {
-					isTablet: isTablet,
-					isPhone: isPhone,
-					isAndroid: isAndroid,
-					isPC: isPC
-				};
-			}();
-
-			if (os.isAndroid || os.isPhone) {
-				document.getElementById("git").style.visibility = "hidden";
-			} else {
-				document.getElementById("git").style.visibility = "visible";
-			} 
-		}
-	</script>
 	<div class="content">
 		<a href="https://github.com/bugprogrammer" target="_blank">
 			<img class="github" id="git" onload="isHide()"
@@ -112,7 +92,3 @@
 </body>
 
 </html>
-<script type="text/javascript" src="js/TweenMax.min.js"></script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/wavify.js"></script>
-<script type="text/javascript" src="js/jquery.wavify.js"></script>
