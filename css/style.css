@@ -16,6 +16,14 @@ button {
 	background: none;
 }
 
+.github {
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	border: 0; 
+	z-index:9999;    
+}
+
 .myButtonInternet {
     display:block;
     background-color: green;
